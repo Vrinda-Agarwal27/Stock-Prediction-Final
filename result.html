@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<title>Button Redirection</title>
+<script>
+    function redirectToFinalRes() {
+        window.location.href = "finalres.html";
+    }
+
+    function redirectToKnow() {
+        window.location.href = "know.html";
+    }
+</script>
+</head>
+<body>
+
+    <style>
+        body{
+            margin: 0;
+            margin-bottom: 0%;
+            line-height: normal;
+            margin-bottom: 0;
+        position: relative;
+        width: 100.1%;
+        height: 718px;
+        background-image: url(ishant-mishra-osWDvhPlGLU-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        }
+        .rectangular{
+            background:#c1c0c8 ;
+            border-radius: 25px;
+            width: 160px;
+            height: 100px;
+            margin-left: 12px;
+            position: absolute;
+            top: 38%;
+            left: 22%;
+        }
+        .rectangular1{
+            background:#c1c0c8 ;
+            border-radius: 25px;
+            width: 160px;
+            height: 100px;
+            margin-left: 12px;
+            position: absolute;
+            top: 38%;
+            left: 40%;
+        }
+        .rectangular2{
+            background:#c1c0c8 ;
+            border-radius: 25px;
+            width: 160px;
+            height: 100px;
+            margin-left: 12px;
+            position: absolute;
+            top: 38%;
+            left: 58%;
+        }
+        
+        /* .rectangular3
+        {
+            background:#c1c0c8 ;
+            border-radius: 25px;
+            width: 160px;
+            height: 100px;
+            margin-left: 12px;
+            position: absolute;
+            top: 55%;
+            left: 48%;
+        } */
+        .Nse {
+        position: relative;
+        font-size: var(--font-size-xl);
+        font-family: var(--font-inter);
+        color: var(--color-black);
+       top: 40%;
+       font-size: bold;
+        text-align: center;
+        padding-left: 10px;
+      }
+        .bse {
+        position: relative;
+        font-size: var(--font-size-xl);
+        font-family: var(--font-inter);
+        color: var(--color-black);
+       top: 40%;
+       font-size: bold;
+        text-align: center;
+        padding-left: 10px;
+      }
+      .stock-details {
+        position: relative;
+        font-size: var(--font-size-xl);
+        font-family: var(--font-inter);
+        color: var(--color-black);
+       top: 40%;
+       font-size: bold;
+        text-align: center;
+        padding-left: 10px;
+      }
+      /* .more {
+        position: relative;
+        font-size: var(--font-size-xl);
+        font-family: var(--font-inter);
+        color: var(--color-black);
+       top: 40%;
+       font-size: bold;
+        text-align: center;
+        padding-left: 10px;
+      } */
+      .nse input[type=text] {
+        width: 160px;
+        height: 100px;
+        border-radius: 25px;
+        border: none;
+        text-align: center;
+        background-color: #c1c0c8;
+    }
+     
+    .nse{
+        float: left;
+        margin: 7px;
+        border-radius: 25px;
+        background:#c1c0c8 ;
+          top: 30px;
+          margin-left: 12px;
+            position: absolute;
+            top: 35%;
+            left: 30%;
+    }
+     
+    .nse button {
+       
+        float: right;
+        padding: 5px 10px;
+        font-size: 12px;
+        border: none;
+        cursor: pointer;
+        
+    }
+    @media (max-width: 600px) {
+                .rectangular,
+                .rectangular1,
+                .rectangular2,
+                .rectangular3 {
+                    width: 100%; 
+                    left: 0; 
+                    margin-left: 0; 
+                }
+    
+                .rectangular1 {
+                    top: 45%; 
+                }
+    
+                .rectangular2,
+                .rectangular3 {
+                    top: 65%; 
+                }
+    
+                .nse {
+                    top: 50%; 
+                }
+    
+                .Nse,
+                .bse,
+                .stock-details,
+                .more {
+                    font-size: 16px; 
+                    margin-top: 10px;
+                }
+            }
+    </style>    
+<button class="rectangular", onclick="redirectToFinalRes()">
+    <div class="Nse">NSE</div>
+</button>
+<button class="rectangular1", onclick="redirectToFinalRes()">
+    <div class="bse">BSE</div>
+</button>
+<button class="rectangular2", onclick="redirectToKnow()">
+    <div class="stock-details">Know more</div>
+</button>
+
+</body>
+</html>
